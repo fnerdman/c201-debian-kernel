@@ -1,0 +1,1 @@
+console=tty1 root=/dev/mmcblk0p3 rootwait rw lsm.module_locking=0 net.ifnames=0 rootfstype=ext4
