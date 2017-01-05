@@ -1,5 +1,13 @@
 #!/bin/bash
 
+bash cleanup.sh
+
+wget https://d-i.debian.org/daily-images/armhf/daily/netboot/netboot.tar.gz
+
+tar -xzvf netboot.tar.gz
+
+return 0
+
 mkimage -f kernel-veyron.its kernel.itb
 
 dd if=/dev/zero of=bootloader.bin bs=512 count=1

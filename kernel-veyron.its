@@ -5,7 +5,7 @@
     images {
         kernel@1{
             description = "kernel";
-            data = /incbin/("vmlinuz-4.8.0-2-armmp");
+            data = /incbin/("debian-installer/armhf/vmlinuz");
             type = "kernel_noload";
             arch = "arm";
             os = "linux";
@@ -16,7 +16,7 @@
         };
         fdt@1{
             description = "rk3288-veyron-speedy.dtb";
-            data = /incbin/("rk3288-veyron-speedy.dtb");
+            data = /incbin/("debian-installer/armhf/dtbs/rk3288-veyron-speedy.dtb");
             type = "flat_dt";
             arch = "arm";
             compression = "none";
@@ -26,7 +26,7 @@
         };
         ramdisk@1{
             description = "ramdisk_image";
-            data = /incbin/("initrd.img-4.8.0-2-armmp");
+            data = /incbin/("debian-installer/armhf/initrd.gz");
             type = "ramdisk";
             arch = "arm";
             os = "linux";
