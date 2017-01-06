@@ -18,3 +18,6 @@ futility --debug vbutil_kernel --pack vmlinuz.signed --keyblock \
   --config kernel.flags --vmlinuz kernel.itb \
   --bootloader bootloader.bin \
   --arch arm
+
+rm kernel.itb
+echo "Signed kernel ready to get booted at 'vmlinuz.signed'"
